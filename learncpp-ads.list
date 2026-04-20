@@ -1,6 +1,6 @@
-# learncpp.com 广告拦截规则
-# 维护者:你自己
-# 更新时间:2026-04-20
+# learncpp.com + 同类技术站广告拦截规则
+# 覆盖:Ezoic + AdSense + 50+ header bidding 广告联盟
+# 更新:2026-04-20
 
 # === Ezoic 广告平台 ===
 DOMAIN-SUFFIX,ezoic.com
@@ -12,11 +12,29 @@ DOMAIN-SUFFIX,ezojs.com
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,2mdn.net
+DOMAIN,imasdk.googleapis.com
 
 # === Amazon 广告 ===
 DOMAIN-SUFFIX,amazon-adsystem.com
 
-# === Header Bidding 广告联盟 ===
+# === Facebook / Meta 追踪 ===
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,facebook.com,REJECT
+# 注意:如果你正常访问 FB,上面这条改成只拦 connect.facebook.net:
+# DOMAIN,connect.facebook.net
+
+# === 微软广告 ===
+DOMAIN,bat.bing.com
+
+# === Yahoo 广告 ===
+DOMAIN-SUFFIX,analytics.yahoo.com
+DOMAIN-SUFFIX,pubgw.yahoo.com
+
+# === Header Bidding 主流联盟 ===
 DOMAIN-SUFFIX,adnxs.com
 DOMAIN-SUFFIX,pubmatic.com
 DOMAIN-SUFFIX,rubiconproject.com
@@ -25,6 +43,7 @@ DOMAIN-SUFFIX,casalemedia.com
 DOMAIN-SUFFIX,indexww.com
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,criteo.net
 DOMAIN-SUFFIX,adsrvr.org
 DOMAIN-SUFFIX,flashtalking.com
 DOMAIN-SUFFIX,gumgum.com
@@ -37,6 +56,17 @@ DOMAIN-SUFFIX,nexxen.com
 DOMAIN-SUFFIX,smilewanted.com
 DOMAIN-SUFFIX,teads.tv
 DOMAIN-SUFFIX,onetag-sys.com
+DOMAIN-SUFFIX,media.net
+DOMAIN-SUFFIX,fastclick.net
+
+# === 手机端新增的广告联盟 ===
+DOMAIN-SUFFIX,ad.gt
+DOMAIN-SUFFIX,bidsystem.ai
+DOMAIN-SUFFIX,cootlogix.com
+DOMAIN-SUFFIX,dotomi.com
+
+# === 视频 / 富媒体广告 ===
+DOMAIN-KEYWORD,open.video
 
 # === 身份识别 / 追踪 ===
 DOMAIN-SUFFIX,id5-sync.com
@@ -44,7 +74,15 @@ DOMAIN-SUFFIX,liadm.com
 DOMAIN-SUFFIX,a-mx.com
 DOMAIN-SUFFIX,optable.co
 DOMAIN-SUFFIX,ingage.tech
-DOMAIN-SUFFIX,analytics.yahoo.com
+DOMAIN-SUFFIX,hadronid.net
+
+# === 数据管理平台(DMP) ===
+DOMAIN-SUFFIX,crwdcntrl.net
+DOMAIN-SUFFIX,akamaihd.net,REJECT
+# 警告:akamaihd.net 是 CDN,上面是粗暴拦法。
+# 如果拦了影响其他站,换成下面这条精确拦:
+# DOMAIN,qsearch-a.akamaihd.net
 
 # === CMP 同意弹窗 ===
 DOMAIN-SUFFIX,gatekeeperconsent.com
+DOMAIN-SUFFIX,ccgateway.net
