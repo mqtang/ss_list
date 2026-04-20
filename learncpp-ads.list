@@ -1,0 +1,50 @@
+# learncpp.com 广告拦截规则
+# 维护者:你自己
+# 更新时间:2026-04-20
+
+# === Ezoic 广告平台 ===
+DOMAIN-SUFFIX,ezoic.com
+DOMAIN-SUFFIX,ezoic.net
+DOMAIN-SUFFIX,ezodn.com
+DOMAIN-SUFFIX,ezojs.com
+
+# === Google 广告家族 ===
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,google-analytics.com
+
+# === Amazon 广告 ===
+DOMAIN-SUFFIX,amazon-adsystem.com
+
+# === Header Bidding 广告联盟 ===
+DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,rubiconproject.com
+DOMAIN-SUFFIX,3lift.com
+DOMAIN-SUFFIX,casalemedia.com
+DOMAIN-SUFFIX,indexww.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,adsrvr.org
+DOMAIN-SUFFIX,flashtalking.com
+DOMAIN-SUFFIX,gumgum.com
+DOMAIN-SUFFIX,sonobi.com
+DOMAIN-SUFFIX,smartadserver.com
+DOMAIN-SUFFIX,33across.com
+DOMAIN-SUFFIX,sharethrough.com
+DOMAIN-SUFFIX,a-mo.net
+DOMAIN-SUFFIX,nexxen.com
+DOMAIN-SUFFIX,smilewanted.com
+DOMAIN-SUFFIX,teads.tv
+DOMAIN-SUFFIX,onetag-sys.com
+
+# === 身份识别 / 追踪 ===
+DOMAIN-SUFFIX,id5-sync.com
+DOMAIN-SUFFIX,liadm.com
+DOMAIN-SUFFIX,a-mx.com
+DOMAIN-SUFFIX,optable.co
+DOMAIN-SUFFIX,ingage.tech
+DOMAIN-SUFFIX,analytics.yahoo.com
+
+# === CMP 同意弹窗 ===
+DOMAIN-SUFFIX,gatekeeperconsent.com
